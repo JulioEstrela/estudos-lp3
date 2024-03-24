@@ -29,3 +29,7 @@ git merge - Mescla o repositório remoto no workspace local
 git pull "Puxa" - git fetch + git merge
 
 git push "Empurra" - Envia todos os commits locais para o repositório remoto
+
+git log - Mostra o histórico de commits: título, descrição, hash, autor e data. (Com alguns argumentos é possível mudar a aparência da saída: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+
+git restore <hash> - Reverte o projeto à como estava antes do commit passado (hash)
