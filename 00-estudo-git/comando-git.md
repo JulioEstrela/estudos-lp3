@@ -1,4 +1,4 @@
-Todos os comandos git que eu me lembro de já ter usado:
+# Comandos git:
 
 git init - Inicializa o repositório git
 
