@@ -7,17 +7,23 @@
 
 def retornarDicionario(frase: str) -> dict:
     import string
-    frase = frase.strip()
 
+    # Remove special characters, symbols, punctuations and numbers
     for c in frase:
         if c not in string.ascii_letters + ' ':
             frase = frase.replace(c, '')
     
+    # Separando as palavras da frase através dos espaços
     palavras = frase.split()
+    
+    # Criando o dicionário
     dicionario = dict.fromkeys(palavras)
-
     for palavra in palavras:
         dicionario[palavra] = frase.count(palavra)
+
+    # É possível criar o dicionário com Counter também:
+    # from collections import Counter
+    # dicionario = dict(Counter(palavras))
 
     return dicionario
 
