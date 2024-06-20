@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+
+{% block title %}Produtos{% endblock %}
+
+{% block header %}
+
+<h1>Produtos</h1>
+    
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    {% if produtos %}
+        {% for produto in produtos%}
+
+        <div class="box produto">
+            <h3>{{produto.nome}}</h3>
+            <h4 id="produto-marca">{{produto.marca}}</h4>
+            <p id="produto-categoria">{{produto.categoria}}</p>
+            <p id="produto-preco">R$ {{produto.preco}}</p>
+
+            <a class="action-button link-comprar" href="#" target="_self">Comprar</a>
+        </div>
+
+        {% endfor %}
+    {% else %}
+        <h2>nenhum produto cadastrado</h2>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+[
+    {
+        "nome": "Relógio Top",
+        "preco": 5000,
+        "estoque": 200
+    },
+    {
+        "nome": "Relógio Exclusivo",
+        "preco": 100000,
+        "estoque": 2
+    }
+]

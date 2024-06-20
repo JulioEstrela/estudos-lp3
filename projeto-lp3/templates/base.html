@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %} title {% endblock %}
+    </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        {% block header %}
+    
+        {% endblock %}
+
+        <nav>
+            <a class="action-button" href="/">homepage</a> 
+            <a class="action-button" href="/produtos">produtos</a> 
+            <a class="action-button" href="/lojas">lojas</a> 
+            <a class="action-button" href="/servicos">serviços</a>
+            <a class="action-button" href="/gerar-cpf">cpf</a> 
+            <a class="action-button" href="/gerar-cnpj">cnpj</a>
+        </nav>
+    </header>
+
+    <section>
+        {% block content %}
+    
+        {% endblock %}
+    </section>
+    
+
+    <footer>
+        <legend>Desenvolvido por</legend>
+        <legend>Júlio Estrela</legend>
+        <legend>IFSP-spo&emsp;2024</legend>
+    </footer>
+</body>
+</html>

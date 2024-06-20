@@ -1,0 +1,12 @@
+[
+    {
+        "nome": "Loja1",
+        "endereco": "Rua das Lojas",
+        "email": "loja1@email.com"
+    },
+    {
+        "nome": "Loja2",
+        "endereco": "Rua das Lojas",
+        "email": "loja2@email.com"
+    }
+]

@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+
+{% block title %}Lojas{% endblock %}
+
+{% block header %}
+
+<h1>Lojas</h1> 
+   
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+{% if lojas %}
+
+    {% for loja in lojas %}
+
+    <div class="box loja">
+        <h3>nome:</h3>
+        <p>&emsp; {{loja.nome}} </p>
+        <h3>endereco:</h3>
+        <p>&emsp; {{loja.endereco}} </p>
+        <h3>email:</h3>
+        <p>&emsp; {{loja.email}} </p>
+    </div>
+
+    {% endfor %}
+{% else %}
+<h2>nenhuma loja registrada</h2>
+{% endif %}
+</div>
+
+{% endblock %}
